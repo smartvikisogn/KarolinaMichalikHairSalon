@@ -1,18 +1,19 @@
 
-        .sponsorImg{
-            padding:5px;
-        }
-   
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 5px;
-        }
-        th {
-            text-align: left;
-        }
+.sponsorImg{
+    padding:5px;
+}
+
+table, th, td {
+    border: 1px solid #C73E8F;
+    border-collapse: collapse;
+    color:#C73E8F;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
 
 table { table-layout: fixed; }
 td { width: 33%; }

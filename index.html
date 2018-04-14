@@ -22,7 +22,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
+    <!-- Font familly -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
@@ -78,11 +81,14 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1><font color="yellow">Karolina Michalik HairSalon</font><br/></h1>
+                <h1 sytle="opacity:0.5; font-family:Tangerine">Karolina Michalik HairSalon</h1>
             </div>
         </div>
     </header>
 
+    
+        
+    
     <section id="Behandlingar">
         <div class="container">
             <div class="row">
@@ -90,41 +96,104 @@
                     <h2 class="section-heading">Behandlingar</h2>
                     <hr class="light;">
                     <div>
-                        <ul  class="text-left">                        
+                        <table>
+                            <tr>
+                                <td><ul  class="text-left">                        
                         <li>FRISØR</li>
                         <li>MAKEUP</li>
                         <li>BRUDESTYLING</li>
                         <li>HUDPLEIE</li>
-                        <li>FARGING AV VIPPER OG BRYN</li>
+                                   
+                    </ul></td>
+                                <td><ul  class="text-left"> 
                         <li>FORMING AV BRYN</li>
                         <li>HÅR EXTENSIONS</li>
                         <li>VIPPE EXTENSIONS</li>
                         <li>PERMANENT MAKEUP</li>
+                                     <li>FARGING AV VIPPER OG BRYN</li>
+                        
+                    </ul><td><ul  class="text-left">                        
+                     
                         <li>BEHANDLINGEN MED RESTYLANE</li>
                         <li>NEGLEDESIGN</li>
                         <li>FOTPLEIE & FOTMASSASJE</li>
                         <li>MASSASJE OG KROPPSBEHANDLING</li>
-                    </ul>
-                    <img src="img/image/produkt.jpg" class="img-responsive" alt="" width=100% align="middle">
+                    </ul></td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                    <!--img src="img/image/produkt.jpg" class="img-responsive" alt="" width=100% align="middle"-->
+                     
+                        
+                        
+                     <!-- picture swipe section --->   
+                         
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/img/image/rebeautyhelthyinformation/1.jpg">
+      </div>
+      <div class="item">
+        <img src="/img/image/rebeautyhelthyinformation/2.jpg">
+      </div>
+      <div class="item">
+        <img src="/img/image/rebeautyhelthyinformation/3.jpg">
+      </div>
+      <div class="item">
+        <img src="/img/image/rebeautyhelthyinformation/4.jpg">
+      </div>
+      <div class="item">
+        <img src="/img/image/rebeautyhelthyinformation/5.jpg">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+                        
+                    <!---->
+                        
                         
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section  class="bg-info"  id="Priser">
+    
+    
+    <section   class="grayColor"  id="Priser">
         <div class="container">
             <div class="row">
                  <div class="col-lg-8 col-lg-offset-2 text-center"> 
                     <h2 class="section-heading text-center">Priser</h2>
                     <hr class="light;">
                     <table align="center">
-                        <th colspan="2" bgcolor="#CCCCCC"><b>Klipp</b></th>
                         <tr>
                             <td>Dameklipp hos stylist </td>
                             <td>kr. 765,-</td>
                         </tr>
-                        <tr bgcolor="#ccffff">
+                        <tr>
                             <td>Herreklipp hos stylist</td>
                             <td>kr. 665,-</td>
                         </tr>
@@ -132,12 +201,11 @@
                             <td>Dameklipp hos Art Director</td>
                             <td>kr. 865,-</td>
                         </tr>
-                        <th colspan="2" bgcolor="#CCCCCC"><b>Farge</b></th>
                         <tr>
                             <td>Klassisk farge </td>
                             <td>Fra kr. 1095,-</td>
                         </tr>
-                        <tr bgcolor="#ccffff">
+                        <tr>
                             <td>Striper</td>
                             <td>Fra kr. 1290,-</td>
                         </tr>
@@ -153,42 +221,51 @@
         </div>
     </section>
    
-    <section class="bg-success" id="Kontact">
+    <section  id="Kontact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Kontact</h2>
                     <hr class="primary">  
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div>
-                        <div class="panel panel-default">
-                            <div class="panel-body text-center">
-                                <h4>Åpent <b>10-19</b> (<b>10-17</b>)</h4>
-                                <h4><b>Address</b></h4>
-                                6894 Vangsnes<br />
-                                <h4><b>Telefone</b></h4>
-                                (703) 1234 1234<br />
-                                <h4><b>Email</b></h4>
-                                <a href="mailto:info@hairsalon.no">info@hairsalon.no</a><br />
-                                <hr />
-                                <div id="map1" class="map">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                </div>
+                        
+                            <table class="col-lg-8 col-lg-offset-2 text-center">
+                                <tr>
+                                    <td  class="text-left"><b>Åpent</b></td>
+                                    <td><b>10-19</b> (<b>10-17</b>)</td>
+                                </tr>
+                                <tr>
+                                    <td  class="text-left"><b>Telefone</b></td>
+                                    <td>  (+47) 1234 5678</td>
+                                </tr>
+                                <tr>
+                                    <td  class="text-left"><b>Address</b></td>
+                                    <td> 6894 Vangsnes</td>
+                                </tr>
+                                <tr>
+                                    <td  class="text-left"><b>Email</b></td>
+                                    <td><a href="mailto:info@hairsalon.no">info@hairsalon.no</a></td>
+                                </tr>
+                            </table>
+                            <!-- div id="map1" class="map"></div-->
+                        
+                    </div> 
                 </div>
             </div>
     </section>
     
     
     
-    
-    <div class="footer text-center" >
-        <p>Copyright (c) 2016, <a href="http://www.smartvik.com" target="_blank">www.SmartVik.com</a>. All Rights Reserved.</p>
-</div>
-    
+    <footer class="page-footer grayColor"  >
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            <br/>
+            © 2016 Copyright:
+            <a href="http://www.smartvik.com" target="_blank">www.SmartVik.com</a>. All Rights Reserved.
+            <br/>
+            <br/>
+        </div>
+        <!--/.Copyright-->
+    </footer>
     
     
     
@@ -239,6 +316,19 @@
                     });
                 </script>
 
+    <script>
+    $(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});</script>
+    
                 <style>
                     .map {
                         min-width: 300px;
@@ -253,6 +343,9 @@
                         height: 70px;
                         font-size: 27px;
                         padding: 10px;
+                    }
+                    .grayColor{
+                        background-color:#F2F2F2;
                     }
                 </style>
 
